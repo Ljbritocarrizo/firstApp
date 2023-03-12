@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Ljbritocarrizo-ProductApp</title>
+</head>
+
+<body>
+    <!--Navegacion-->
+    <nav class="navbar navbar-light bg-light shadow p-3 mb-5 rounded text-center">
+        <img src="/img/icon-96x96.png" alt="" srcset="">
+        <h2 class="titulo">Ljbritocarrizo First App</h2>
+    </nav>
+    <div class="container ml-1">
+    <!--Aplicacion-->
+    <div id="App " class="row pt-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Agregar producto</h4>
+                </div>
+                <form id="product-form" class="card-body shadow p-2 mb-50">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Nombre del producto" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" placeholder="Precio" id="price">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="year" min="1900" max="2021" value="2020" placeholder="anio del producto"
+                            class="form-control">
+
+                    </div>
+                    <input type="submit" value="Save" class="btn btn-primary btn-block" id="">
+                </form>
+            </div>
+        </div>
+        <div class="col-md-8" id="product-list">
+
+        </div>
+
+        <section class="clima col-md-6 shadow p-3 mb-5 bg-white rounded mt-3">
+            <div>
+                <label for="ciudad" style="margin-left: 2px;"></label>
+                <input type="text" id="ciudad" placeholder="Name a city" class="col-md6">
+                <button type="button" class="btn btn-success col-md-6  col-sm-2">Get weather</button>
+            </div>
+            <span>
+                <p id="temperatura"></p>
+            </span>
+        </section>
+    </div>
+
+
+
+
+    </div>
+    <script src="app.js"></script>
+    <script src="clima.js"></script>
+</body>
+
+</html>
